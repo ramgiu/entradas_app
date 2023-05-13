@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Entradas para Recitales</title>
+    <!-- Agregamos los enlaces de los archivos CSS de Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Agregamos el archivo CSS personalizado -->
+    <style>
+        /* Estilos para el hero banner */
+        .hero-banner {
+            background-image: url('img/oasis_hero.jpg'); /* Ruta de la imagen de la banda */
+            background-size: cover;
+            background-position: center center;
+            height: 400px; /* Altura del hero banner */
+            width: 100%; /* Ancho del hero banner al 100% */
+        }
+    </style>
+</head>
+<body>
+    <div class="container-fluid p-0">
+        <div class="hero-banner">
+        </div>
+    </div>
+
+    <div class="container mt-5">
+        <h1>Entradas disponibles</h1>
+        <div id="tarjetas-container" class="row">
+            <!-- Las tarjetas de las entradas se generarán dinámicamente mediante JavaScript -->
+        </div>
+
+        <h1>Cargar entrada</h1>
+        <form id="formulario-entrada">
+            <div class="form-group">
+                <label for="fecha">Fecha</label>
+                <input type="date" id="fecha" required class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="ubicacion">Ubicación</label>
+                <select id="ubicacion" required class="form-control" >
+                    <option value="Campo VIP">Campo VIP</option>
+                    <option value="Campo">Campo</option>
+                    <option value="Platea">Platea</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="precio">Precio</label>
+                <input type="number" id="precio" required class="form-control">
+            </div>
+            <button type="submit" onclick="agregarEntrada()" class="btn btn-primary">Agregar Entrada</button> <!-- Cambiado a type="submit" -->
+        </form>
+    </div>
+
+    <script src="main.js"></script> <!-- Agregamos el archivo JavaScript externo -->
+</body>
+</html>
+

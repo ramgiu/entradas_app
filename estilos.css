@@ -1,0 +1,19 @@
+/* Estilos para la página de creación de entradas */
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+
+form {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+label, input {
+    display: block;
+    margin-bottom: 10px;
+}
+
+input[type="submit"] {
+    margin-top: 10px;
+}
